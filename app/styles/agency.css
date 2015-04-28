@@ -215,11 +215,11 @@ fieldset[disabled] .btn-xl.active {
   .navbar-default .navbar-nav > .active > a {
     border-radius: 3px;
   }
-  .navbar-default.navbar-shrink {
+  .navbar-default.animated-header-scroll{
     background-color: #222222;
     padding: 10px 0;
   }
-  .navbar-default.navbar-shrink .navbar-brand {
+  .navbar-default.animated-header-scroll .navbar-brand {
     font-size: 1.5em;
   }
 }
