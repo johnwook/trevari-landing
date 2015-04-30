@@ -224,6 +224,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
+  /*background-image: url('../images/header-bg.jpg');*/
   background-image: url('../images/bookman.jpeg');
   background-repeat: none;
   background-attachment: scroll;
@@ -250,7 +251,7 @@ header .intro-text .intro-heading {
   font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 50px;
   margin-bottom: 25px;
 }
@@ -270,7 +271,7 @@ header .intro-text .intro-heading {
     font-family: Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 75px;
+    font-size: 60px;
     line-height: 75px;
     margin-bottom: 50px;
   }
