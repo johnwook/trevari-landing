@@ -5,10 +5,10 @@
   },
   "devDependencies": {
     "autoprefixer-core": "^5.1.11",
-    "browser-sync": "^2.6.4",
+    "browser-sync": "^2.6.9",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
-    "gulp-cache": "^0.2.8",
+    "gulp-cache": "^0.2.9",
     "gulp-csso": "^1.0.0",
     "gulp-gzip": "^1.1.0",
     "gulp-if": "^1.2.5",
