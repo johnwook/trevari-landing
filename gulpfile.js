@@ -42,6 +42,7 @@ gulp.task('html', ['styles'], function () {
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+    .pipe($.gzip({ append:false }))
     .pipe(gulp.dest('dist'));
 });
 
