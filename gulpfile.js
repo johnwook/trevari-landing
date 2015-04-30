@@ -38,13 +38,11 @@ gulp.task('html', ['styles'], function () {
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
-    .pipe($.gzip({ append:false }))
     .pipe($.rev())
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe($.revReplace())
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
-    .pipe($.gzip({ append:false }))
     .pipe(gulp.dest('dist'));
 });
 
