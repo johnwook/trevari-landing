@@ -38,7 +38,7 @@ gulp.task('html', ['styles'], function () {
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
-    .pipe($.gzip())
+    .pipe($.gzip({ append:false }))
     .pipe(assets.restore())
     .pipe($.useref())
     .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
