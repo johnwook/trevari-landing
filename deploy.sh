@@ -1,0 +1,5 @@
+aws s3 cp dist/ s3://www.trevari.co.kr/ --recursive --exclude "*" --include "*.css" --content-type "text/css" --content-encoding "gzip" --cache-control "max-age=604800"
+aws s3 cp dist/ s3://www.trevari.co.kr/ --recursive --exclude "*" --include "*.js" --content-type "application/javascript" --content-encoding "gzip" --cache-control "max-age=604800"
+aws s3 cp dist/ s3://www.trevari.co.kr/ --recursive --exclude "*" --include "*.jpeg" --cache-control "max-age=604800"
+aws s3 cp dist/ s3://www.trevari.co.kr/ --recursive --exclude "*" --include "*.eot" --include "*.svg" --include "*.ttf" --include "*.woff" --include "*.woff2" --cache-control "max-age=604800"
+aws s3 cp dist/ s3://www.trevari.co.kr/ --recursive --exclude "*" --include "*.html" --content-type "text/html" --content-encoding "gzip" --cache-control "max-age=7200"
