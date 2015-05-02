@@ -121,7 +121,13 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('compress', ['html'], function () {
+  return gulp.src(['dist/**/*.js', 'dist/**/*.css', 'dist/**/*.html'])
+    .pipe($.gzip( { append: false }))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('build', ['jshint', 'compress', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
