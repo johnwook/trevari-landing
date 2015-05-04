@@ -63,7 +63,7 @@
               <a class="page-scroll" href="#services">Services</a>
             </li>
             <li>
-              <a class="page-scroll" href="#portfolio">Essay</a>
+              <a class="page-scroll" href="#portfolio">Clubs</a>
             </li>
             <li>
               <a class="page-scroll" href="#contact">Contact</a>
@@ -140,23 +140,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">write your essay</h2>
+            <h2 class="section-heading">Clubs</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-3"></div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="https://barbariansoo.typeform.com/to/HC8sGg" class="portfolio-link" target="_blank">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img src="images/group1.png" class="img-responsive" alt="첫번째 모임">
+              <img src="images/group1.jpeg" class="img-responsive" alt="첫번째 모임">
             </a>
             <div class="portfolio-caption">
-              <h4>5월 16일 14시</h4>
-              <p class="text-muted"><유쾌한 혁명을 작당하는 공동체를 위한 가이드북></p>
+              <h4>세번째 토요일 모임</h4>
+              <p class="text-muted">모임 이름은 함께 정해요!^^</p>
             </div>
           </div>
         </div>
@@ -212,6 +212,45 @@
       </div>
     </footer>
 
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-center">세번째 토요일 모임</h2>
+                <p>
+                  <strong>언제?</strong><br>
+                  <span>5월 16일 토요일 오후 2시 20분부터 6시까지</span>
+                </p>
+                <p>
+                  <strong>어디?</strong><br>
+                  <span><a href="http://durl.me/8rv7ee">소나무장학회</a> (강남역에서 도보 3분거리)</span>
+                </p>
+                <p>
+                  <strong>에세이</strong><br>
+                  <span><a href="https://barbariansoo.typeform.com/to/HC8sGg" target="_blank">여기</a>로!</span>
+                </p>
+                <img src="images/group1_location.png" class="img-responsive" alt="소나무장학회" />
+                <button type="button" class="btn btn-primary center-block" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -234,6 +273,7 @@
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
       -->
+        <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
         <!-- endbuild -->
 
