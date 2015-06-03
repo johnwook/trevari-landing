@@ -44,7 +44,6 @@ h4,
 h5,
 h6 {
   font-family: Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
 }
 .img-centered {
@@ -692,4 +691,12 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+.container.gallery {
+  padding-top: 30px
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 750px;
+  }
 }
