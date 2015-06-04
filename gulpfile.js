@@ -34,7 +34,7 @@ gulp.task('jshint', function () {
 gulp.task('html', ['styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
+  return gulp.src('app/index.html')
     .pipe(assets)
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
@@ -121,13 +121,13 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('compress', ['html'], function () {
+gulp.task('compress', function () {
   return gulp.src(['dist/**/*.js', 'dist/**/*.css', 'dist/**/*.html'])
     .pipe($.gzip( { append: false }))
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['jshint', 'compress', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
